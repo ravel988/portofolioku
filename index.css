@@ -123,9 +123,9 @@ section {
 
 .home {
   display: flex;
-  justify-content: center;
+  flex-direction: row; /* Ensure text is beside the image */
   align-items: center;
-  gap: 8rem;
+  gap: 2rem; /* Add spacing between image and text */
 }
 
 .home .home-content h1 {
@@ -150,6 +150,8 @@ span {
 
 .home-img {
   border-radius: 50%;
+  flex: 0 0 auto; /* Prevent image from stretching */
+  width: 30%; /* Make the image smaller */
 }
 
 .home-img img {

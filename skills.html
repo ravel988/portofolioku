@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="skills.css" />
+    <title>Portfolio Website</title>
+  </head>
+  <body>
+    <header>
+      <a href="https://www.hoyoverse.com/id-id/" class="logo"><img src="images/logo.png" alt=""></a>
+
+      <nav>
+  <a href="index.html">Home</a>
+  <a href="story.html">Story</a>
+  <a href="skills.html" class="active">Skills</a>
+  <a href="weapon.html">Weapon</a>
+  <a href="artefact.html">Artefact</a>
+  <a href="contact.html">Contact</a>
+</nav>
+</header>
+    <section class="home">
+      <div>
+        <h1>Raiden Shogun (Archon Electro) - Skill</h1>
+        <p>
+          <span>1. Serangan Normal: Origin</span><br>
+          Serangan Normal: Melakukan hingga 5 serangan tombak berturut-turut.<br>
+          Serangan Charged: Menggunakan stamina untuk melakukan serangan AoE.<br>
+          Serangan Jatuh: Melompat dari udara dan menyerang tanah dengan area serangan AoE.<br><br>
+          <span>2. Skill Elemental: Transcendence: Baleful Omen</span><br>
+          Raiden Shogun memanggil Baleful Omen yang memberikan damage Electro ke musuh di sekitarnya.<br>
+          Baleful Omen memberikan efek Eye of Stormy Judgment pada anggota tim di dekatnya, yang:<br>
+          - Melakukan serangan AoE Electro koordinasi saat anggota tim menyerang.<br>
+          - Menghasilkan partikel Energi.<br>
+          Durasi: 15 detik<br>
+          Cooldown: 15 detik<br><br>
+          <span>3. Elemental Burst: Secret Art: Musou Shinsetsu</span><br>
+          Raiden Shogun melepaskan serangan besar Musou no Hitotachi yang memberikan damage AoE Electro sangat besar.<br>
+          Mengaktifkan mode Musou Isshin di mana serangan Normal dan Charged-nya memberikan damage Electro.<br>
+          Mengembalikan Energi ke anggota tim berdasarkan penggunaan Energi Burst mereka.<br>
+          Durasi: 10 detik<br><br>
+          <span>4. Talenta Pasif</span><br>
+          Wishes Unnumbered: Saat anggota tim menerima partikel atau orb Energi, Raiden Shogun mengembalikan Energi untuk seluruh tim.<br>
+          Enlightened One: Meningkatkan Energy Recharge Raiden Shogun.<br>
+          All-Preserver: Meningkatkan damage Elemental Burst berdasarkan Energy Recharge.<br>
+        </p>
+      </div>
+    </section>
+    <script>
+      let lastScroll = 0;
+      const header = document.querySelector('header');
+      window.addEventListener('scroll', function() 
+      {
+        const currentScroll = window.pageYOffset;
+        if (currentScroll > lastScroll && currentScroll > 80) {
+          header.style.transform = 'translateY(-120px)';
+          header.style.transition = 'transform 0.4s';
+        } else {
+          header.style.transform = 'translateY(0)';
+          header.style.transition = 'transform 0.4s';
+        }
+        lastScroll = currentScroll;
+      });
+    </script>
+  </body>
+</html>

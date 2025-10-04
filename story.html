@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="story.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <title>Portfolio Website</title>
+  </head>
+  <body>
+    <header>
+      <a href="https://www.hoyoverse.com/id-id/" class="logo"><img src="images/logos.png" alt=""></a>
+
+      <nav>
+  <a href="index.html">Home</a>
+  <a href="story.html" class="active">Story</a>
+  <a href="skills.html">Skills</a>
+  <a href="weapon.html">Weapon</a>
+  <a href="artefact.html">Artefact</a>
+  <a href="contact.html">Contact</a>
+</nav>
+</header>
+  <section class="home">
+  <div>
+  <h1>Story of Raiden Shogun</h1>
+  <p>
+        <span>Berikut adalah ringkasan cerita Raiden Shogun (Raiden Ei) dari Genshin Impact:</span><br><br>
+        <span>Awal mula: Kehancuran dan kehilangan</span><br>
+        Archon Elektro pertama dan kembarannya: Raiden Ei adalah saudara kembar dari Raiden Makoto, Archon Elektro pertama. Makoto memerintah Inazuma, sementara Ei bertindak sebagai kagemusha atau pengawal dan jenderal pribadinya.<br><br>
+        <span>Tragedi 500 tahun lalu:</span> Selama bencana di Khaenri'ah, Makoto tewas di medan perang. Kematian Makoto membuat Ei merasakan kehilangan dan kesedihan mendalam. Peristiwa ini menjadi titik balik bagi Ei. Ia menjadi sangat takut akan kehilangan dan kefanaan, sehingga terobsesi dengan konsep keabadian.<br><br>
+        <span>Pengambilan takhta:</span> Setelah Makoto gugur, Ei naik takhta sebagai Archon Elektro yang baru. Namun, kekhawatiran dan kesedihannya membuatnya percaya bahwa satu-satunya cara untuk mencapai keabadian sejati adalah dengan menghentikan berjalannya waktu di Inazuma.<br><br>
+        <span>Penciptaan boneka dan dekret Perburuan Vision</span><br>
+        Boneka Shogun: Untuk mewujudkan idenya, Ei menciptakan boneka yang akan memerintah Inazuma menggantikannya. Ia memindahkan kesadarannya ke dalam pedang Musou Isshin dan menyegel dirinya di Plane of Euthymia, sebuah alam meditasi di dalam pikirannya.<br>
+        Tujuan boneka: Boneka ini diprogram untuk mengikuti jalan "keabadian" yang dianggap Ei sebagai satu-satunya jalan menuju ketenteraman. Boneka ini tidak memiliki emosi atau kehendak bebas, melainkan hanya menjalankan perintah yang telah ditetapkan.<br>
+        Dekret Perburuan Vision (Vision Hunt Decree): Boneka Shogun yang kaku dan terprogram menganggap Vision (artefak yang diberikan kepada manusia terpilih) sebagai ancaman terhadap keabadian. Menurutnya, Vision adalah bukti ambisi dan perubahan yang harus dilenyapkan. Oleh karena itu, ia mengeluarkan dekret untuk menyita semua Vision di Inazuma.<br><br>
+        <span>Pergolakan di Inazuma</span><br>
+        Perang saudara: Dekret ini memicu pergolakan dan perang saudara. Banyak orang menderita dan kehilangan harapan, termasuk Kazuha yang melihat temannya kalah dalam duel dan kehilangan Vision-nya di hadapan Raiden Shogun.<br>
+        Kemarahan para Vision: Dekret ini juga menyebabkan kemarahan dan ketakutan bagi mereka yang Vision-nya telah diambil, karena hal itu merampas impian dan tujuan hidup mereka.<br>
+        Intervensi Traveler: Traveler (pemeran utama) datang ke Inazuma dan berinteraksi dengan orang-orang yang terkena dampak, termasuk Sangonomiya Kokomi dari Pasukan Perlawanan. Traveler akhirnya berhadapan langsung dengan boneka Shogun.<br><br>
+        <span>Konfrontasi dan pemulihan</span><br>
+        Duel di Plane of Euthymia: Setelah bertarung melawan boneka Shogun, Traveler memasuki alam kesadaran Ei di Plane of Euthymia. Di sana, Ei mengungkapkan ketakutannya akan kehilangan dan alasannya menciptakan boneka.<br>
+        Penemuan makna keabadian: Dengan bantuan Traveler dan ingatan-ingatan dari teman-teman lamanya (Makoto dan Yae Miko), Ei menyadari bahwa keabadian sejati bukanlah tentang mempertahankan sesuatu selamanya, melainkan tentang menghargai kenangan dan membiarkan perubahan terjadi.<br>
+        Penerimaan diri: Ei menerima bahwa perubahan adalah bagian tak terhindarkan dari kehidupan. Ia setuju untuk membubarkan dekret dan kembali mengendalikan Inazuma, meskipun tetap menggunakan bonekanya untuk urusan publik.<br><br>
+        <span>Pasca-pemulihan</span><br>
+        Tanggung jawab baru: Ei kini belajar untuk kembali berinteraksi dengan rakyatnya dan memahami bahwa keabadian dapat ditemukan dalam ikatan emosional dan pertumbuhan Inazuma, bukan dalam stagnasi. Ia mulai menerima perubahan dan memimpin Inazuma ke arah yang lebih baik.
+      </p>
+    </div>
+  </section>
+    <script>
+      let lastScroll = 0;
+      const header = document.querySelector('header');
+      window.addEventListener('scroll', function() 
+      {
+        const currentScroll = window.pageYOffset;
+        if (currentScroll > lastScroll && currentScroll > 80) {
+          header.style.transform = 'translateY(-120px)';
+          header.style.transition = 'transform 0.4s';
+        } else {
+          header.style.transform = 'translateY(0)';
+          header.style.transition = 'transform 0.4s';
+        }
+        lastScroll = currentScroll;
+      });
+    </script>
+  </body>
+</html>
